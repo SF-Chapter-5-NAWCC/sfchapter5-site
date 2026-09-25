@@ -1,0 +1,19 @@
+// Cloudflare Workers deployment: serves the static files in ./public.
+// No Worker script is needed; see README.md for deploy steps.
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "sfchapter5",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public",
+    // /meetings/ serves public/meetings/index.html
+    "html_handling": "auto-trailing-slash",
+    // Unknown addresses get public/404.html with a 404 status
+    "not_found_handling": "404-page"
+  }
+  // To serve on the chapter domain once its DNS is on Cloudflare, uncomment:
+  // ,"routes": [
+  //   { "pattern": "sfchapter5.org", "custom_domain": true },
+  //   { "pattern": "www.sfchapter5.org", "custom_domain": true }
+  // ]
+}
