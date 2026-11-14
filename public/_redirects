@@ -46,3 +46,6 @@
 /gremlins-in-watch-repair /archive/watch-repair-gremlins/ 301
 /feed/ / 301
 /wp-admin/* / 301
+/docs/stephens_1.pdf /docs/stephens-part-1-biography.pdf 301
+/docs/stephens_2.pdf /docs/stephens-part-2-collection.pdf 301
+/docs/stephens_3.pdf /docs/stephens-part-3-scrapbook.pdf 301
